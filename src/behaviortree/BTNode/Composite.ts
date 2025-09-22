@@ -87,10 +87,11 @@ export class Sequence extends Composite {
 }
 
 /**
- * 并行节点 从上到下执行 全部执行一遍
+ * 并行节点 从左到右依次执行所有子节点
+ * 注意：这里的"并行"是逻辑概念，实际是顺序执行
  * 返回优先级 FAILURE > RUNNING > SUCCESS
  */
-@BT.ClassComposite("Parallel", { name: "并行节点", group: "基础组合节点", desc: "同时执行所有子节点, 子节点状态: 任意失败则失败 > 任意执行中则执行中 > 全部成功则成功" })
+@BT.ClassComposite("Parallel", { name: "并行节点", group: "基础组合节点", desc: "依次执行所有子节点(从左到右), 子节点状态: 任意失败则失败 > 任意执行中则执行中 > 全部成功则成功" })
 export class Parallel extends Composite {
     public tick(dt: number): Status {
         let result = Status.SUCCESS;
@@ -161,10 +162,11 @@ export class RandomSelector extends Composite {
 }
 
 /**
- * 并行节点 从上到下执行 全部执行一遍
+ * 并行任意成功节点 从左到右依次执行所有子节点
+ * 注意：这里的"并行"是逻辑概念，实际是顺序执行
  * 返回优先级 SUCCESS > RUNNING > FAILURE
  */
-@BT.ClassComposite("ParallelAnySuccess", { name: "并行任意成功节点", group: "基础组合节点", desc: "任意一个成功则成功 > 任意一个执行中则执行中 > 全部失败则失败" })
+@BT.ClassComposite("ParallelAnySuccess", { name: "并行任意成功节点", group: "基础组合节点", desc: "依次执行所有子节点(从左到右), 任意一个成功则成功 > 任意一个执行中则执行中 > 全部失败则失败" })
 export class ParallelAnySuccess extends Composite {
     public tick(dt: number): Status {
         let result = Status.FAILURE;

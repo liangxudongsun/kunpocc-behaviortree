@@ -7,33 +7,6 @@
 import { sp } from "cc";
 import { BT } from "./Header";
 
-@BT.ClassAction("BTTestNode", { name: "嵌套数据测试节点", group: "测试", desc: "测试节点" })
-export class BTTestNode extends BT.LeafNode {
-    @BT.prop({
-        type: BT.ParamType.object,
-        properties: {
-            x: { type: BT.ParamType.int, min: 0 },
-            y: { type: BT.ParamType.int, min: 0 }
-        }
-    })
-    position: { x: number, y: number };
-
-    // 对象数组参数
-    @BT.prop({
-        type: BT.ParamType.array,
-        itemType: BT.ParamType.object,
-        itemProperties: {
-            name: { type: BT.ParamType.string },
-            value: { type: BT.ParamType.int }
-        }
-    })
-    configs: Array<{ name: string, value: number }>;
-
-    public tick(): BT.Status {
-        return BT.Status.SUCCESS;
-    }
-}
-
 @BT.ClassAction("BTAnimation", { name: "播放动画", group: "动画", desc: "通过动画名播放动画，播放完成后返回成功" })
 export class BTAnimation extends BT.LeafNode {
     @BT.prop({ type: BT.ParamType.string, description: "动画名" })
@@ -82,6 +55,52 @@ export class BTConditionRandom extends BT.Condition {
 
     public isEligible(): boolean {
         return Math.random() < this._value;
+    }
+}
+
+
+
+/************************ 下方是几个编辑器中测试用的节点，删除即可  *************************/
+@BT.ClassAction("BTTestNode2", { name: "空行为节点", group: "测试", desc: "测试节点" })
+export class BTTestNode2 extends BT.LeafNode {
+    public tick(): BT.Status {
+        return BT.Status.SUCCESS;
+    }
+}
+
+@BT.ClassAction("BTTestNode", { name: "嵌套数据测试节点", group: "测试", desc: "测试节点" })
+export class BTTestNode extends BT.LeafNode {
+    @BT.prop({
+        type: BT.ParamType.object,
+        properties: {
+            x: { type: BT.ParamType.int, min: 0 },
+            y: { type: BT.ParamType.int, min: 0 }
+        }
+    })
+    position: { x: number, y: number };
+
+    // 对象数组参数
+    @BT.prop({
+        type: BT.ParamType.array,
+        itemType: BT.ParamType.object,
+        itemProperties: {
+            name: { type: BT.ParamType.string },
+            value: { type: BT.ParamType.int }
+        }
+    })
+    configs: Array<{ name: string, value: number }>;
+
+    public tick(): BT.Status {
+        return BT.Status.SUCCESS;
+    }
+}
+
+/** 条件节点 */
+@BT.ClassCondition("BTConditionTest", { name: "测试条件节点", group: "基础条件节点", desc: "" })
+export class BTConditionRandomTest extends BT.Condition {
+
+    public isEligible(): boolean {
+        return true;
     }
 }
 

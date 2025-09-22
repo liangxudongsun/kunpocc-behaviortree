@@ -1,7 +1,7 @@
 
 /** 行为树 */
 export { BehaviorTree } from "./behaviortree/BehaviorTree";
-export { Blackboard } from "./behaviortree/Blackboard";
+export { Blackboard, globalBlackboard } from "./behaviortree/Blackboard";
 export * from "./behaviortree/BTNode/Action";
 export { IBTNode } from "./behaviortree/BTNode/BTNode";
 export * from "./behaviortree/BTNode/Composite";

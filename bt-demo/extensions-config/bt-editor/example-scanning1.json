@@ -1,0 +1,494 @@
+{
+    "name": "example-scanning1",
+    "description": "",
+    "nodes": [
+        {
+            "id": "1758633912545_7xy1se8pk",
+            "className": "Selector",
+            "name": "选择节点",
+            "position": {
+                "x": -180,
+                "y": -240
+            },
+            "parameters": {},
+            "children": [
+                "1758633912545_z0wbw5zkn",
+                "1758633912545_ismgc4xad",
+                "1758633912545_cdy2pg1pn",
+                "1758634397890_nh8nat3ph"
+            ],
+            "alias": "守卫AI"
+        },
+        {
+            "id": "1758633912545_26tx6w4f1",
+            "className": "BTTestNode2",
+            "name": "空行为节点",
+            "position": {
+                "x": -760,
+                "y": 140
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "攻击"
+        },
+        {
+            "id": "1758633912545_df302i0u7",
+            "className": "BTTestNode2",
+            "name": "空行为节点",
+            "position": {
+                "x": -340,
+                "y": 60
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "搜索敌人"
+        },
+        {
+            "id": "1758633912545_qdoxrynps",
+            "className": "BTTestNode2",
+            "name": "空行为节点",
+            "position": {
+                "x": -480,
+                "y": 140
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "追击敌人"
+        },
+        {
+            "id": "1758633912545_z0wbw5zkn",
+            "className": "Sequence",
+            "name": "顺序节点",
+            "position": {
+                "x": -680,
+                "y": -120
+            },
+            "parameters": {},
+            "children": [
+                "1758633987202_p7z2iewl8",
+                "1758634022458_f769kvf1x"
+            ],
+            "alias": "战斗模式"
+        },
+        {
+            "id": "1758633912545_ismgc4xad",
+            "className": "Sequence",
+            "name": "顺序节点",
+            "position": {
+                "x": -80,
+                "y": -120
+            },
+            "parameters": {},
+            "children": [
+                "1758633912545_q02k78ubn",
+                "1758634249975_c1i6wxc2w"
+            ],
+            "alias": "警戒模式"
+        },
+        {
+            "id": "1758633912545_nawabdhem",
+            "className": "BTTestNode2",
+            "name": "空行为节点",
+            "position": {
+                "x": -160,
+                "y": 60
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "调查可疑位置"
+        },
+        {
+            "id": "1758633912545_q02k78ubn",
+            "className": "BTConditionTest",
+            "name": "测试条件节点",
+            "position": {
+                "x": -180,
+                "y": -60
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "处于警戒状态？"
+        },
+        {
+            "id": "1758633912545_cdy2pg1pn",
+            "className": "Sequence",
+            "name": "顺序节点",
+            "position": {
+                "x": 360,
+                "y": -120
+            },
+            "parameters": {},
+            "children": [
+                "1758634317404_8aaeb4ve2",
+                "1758634337943_93kaze24m"
+            ],
+            "alias": "怀疑模式"
+        },
+        {
+            "id": "1758633912545_lgpy79s0o",
+            "className": "BTTestNode2",
+            "name": "空行为节点",
+            "position": {
+                "x": 280,
+                "y": 60
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "查看声音方向"
+        },
+        {
+            "id": "1758633912545_i1kac3qvv",
+            "className": "BTTestNode2",
+            "name": "空行为节点",
+            "position": {
+                "x": 420,
+                "y": 60
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "接近可以位置"
+        },
+        {
+            "id": "1758633912545_5cqcrrfkg",
+            "className": "BTTestNode2",
+            "name": "空行为节点",
+            "position": {
+                "x": 560,
+                "y": 60
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "提高警觉"
+        },
+        {
+            "id": "1758633987202_p7z2iewl8",
+            "className": "BTConditionTest",
+            "name": "测试条件节点",
+            "position": {
+                "x": -800,
+                "y": -60
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "处于战斗状态？"
+        },
+        {
+            "id": "1758634022458_f769kvf1x",
+            "className": "Selector",
+            "name": "选择节点",
+            "position": {
+                "x": -620,
+                "y": -40
+            },
+            "parameters": {},
+            "children": [
+                "1758634091921_6xr6c6cul",
+                "1758634094741_dk5mmim4z",
+                "1758633912545_df302i0u7"
+            ],
+            "alias": "战斗行为选择"
+        },
+        {
+            "id": "1758634091921_6xr6c6cul",
+            "className": "Sequence",
+            "name": "顺序节点",
+            "position": {
+                "x": -820,
+                "y": 60
+            },
+            "parameters": {},
+            "children": [
+                "1758634117284_29jp1jxyq",
+                "1758633912545_26tx6w4f1"
+            ],
+            "alias": "攻击"
+        },
+        {
+            "id": "1758634094741_dk5mmim4z",
+            "className": "Sequence",
+            "name": "顺序节点",
+            "position": {
+                "x": -540,
+                "y": 60
+            },
+            "parameters": {},
+            "children": [
+                "1758634119520_rz3hx4hno",
+                "1758633912545_qdoxrynps"
+            ],
+            "alias": "追击"
+        },
+        {
+            "id": "1758634117284_29jp1jxyq",
+            "className": "BTConditionTest",
+            "name": "测试条件节点",
+            "position": {
+                "x": -900,
+                "y": 120
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "敌人在范围内？"
+        },
+        {
+            "id": "1758634119520_rz3hx4hno",
+            "className": "BTConditionTest",
+            "name": "测试条件节点",
+            "position": {
+                "x": -620,
+                "y": 120
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "敌人可见？"
+        },
+        {
+            "id": "1758634249975_c1i6wxc2w",
+            "className": "Selector",
+            "name": "选择节点",
+            "position": {
+                "x": -20,
+                "y": -40
+            },
+            "parameters": {},
+            "children": [
+                "1758633912545_nawabdhem",
+                "1758634290870_im6rplw92",
+                "1758634284662_l7hvr7fuo"
+            ],
+            "alias": "警戒行为选择"
+        },
+        {
+            "id": "1758634284662_l7hvr7fuo",
+            "className": "BTTestNode2",
+            "name": "空行为节点",
+            "position": {
+                "x": 120,
+                "y": 60
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "扩大搜索范围"
+        },
+        {
+            "id": "1758634290870_im6rplw92",
+            "className": "BTTestNode2",
+            "name": "空行为节点",
+            "position": {
+                "x": -20,
+                "y": 60
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "呼叫支援"
+        },
+        {
+            "id": "1758634317404_8aaeb4ve2",
+            "className": "BTConditionTest",
+            "name": "测试条件节点",
+            "position": {
+                "x": 260,
+                "y": -60
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "处于怀疑状态？"
+        },
+        {
+            "id": "1758634337943_93kaze24m",
+            "className": "Selector",
+            "name": "选择节点",
+            "position": {
+                "x": 420,
+                "y": -40
+            },
+            "parameters": {},
+            "children": [
+                "1758633912545_lgpy79s0o",
+                "1758633912545_i1kac3qvv",
+                "1758633912545_5cqcrrfkg"
+            ],
+            "alias": "怀疑行为选择"
+        },
+        {
+            "id": "1758634397890_nh8nat3ph",
+            "className": "BTTestNode2",
+            "name": "空行为节点",
+            "position": {
+                "x": 540,
+                "y": -120
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "正常巡逻"
+        }
+    ],
+    "connections": [
+        {
+            "id": "conn_1758633912545_72krgicoe",
+            "sourceNodeId": "1758633912545_7xy1se8pk",
+            "targetNodeId": "1758633912545_z0wbw5zkn",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758633912545_bhua2nzbe",
+            "sourceNodeId": "1758633912545_7xy1se8pk",
+            "targetNodeId": "1758633912545_ismgc4xad",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758633912545_qztd5a8yt",
+            "sourceNodeId": "1758633912545_ismgc4xad",
+            "targetNodeId": "1758633912545_q02k78ubn",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758633912545_fv0m9fjvz",
+            "sourceNodeId": "1758633912545_7xy1se8pk",
+            "targetNodeId": "1758633912545_cdy2pg1pn",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758633989141_2t28ad61w",
+            "sourceNodeId": "1758633912545_z0wbw5zkn",
+            "targetNodeId": "1758633987202_p7z2iewl8",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758634024382_250r9sidn",
+            "sourceNodeId": "1758633912545_z0wbw5zkn",
+            "targetNodeId": "1758634022458_f769kvf1x",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758634096585_wmf98bvny",
+            "sourceNodeId": "1758634022458_f769kvf1x",
+            "targetNodeId": "1758634091921_6xr6c6cul",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758634098806_r2eard8uu",
+            "sourceNodeId": "1758634022458_f769kvf1x",
+            "targetNodeId": "1758634094741_dk5mmim4z",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758634121545_kb9vs2npo",
+            "sourceNodeId": "1758634091921_6xr6c6cul",
+            "targetNodeId": "1758634117284_29jp1jxyq",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758634123128_3oq7o7eyv",
+            "sourceNodeId": "1758634094741_dk5mmim4z",
+            "targetNodeId": "1758634119520_rz3hx4hno",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758634125701_vu0xgjyca",
+            "sourceNodeId": "1758634094741_dk5mmim4z",
+            "targetNodeId": "1758633912545_qdoxrynps",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758634168660_65ptgegud",
+            "sourceNodeId": "1758634022458_f769kvf1x",
+            "targetNodeId": "1758633912545_df302i0u7",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758634191735_9dp24mq79",
+            "sourceNodeId": "1758634091921_6xr6c6cul",
+            "targetNodeId": "1758633912545_26tx6w4f1",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758634251707_a24kslpjc",
+            "sourceNodeId": "1758633912545_ismgc4xad",
+            "targetNodeId": "1758634249975_c1i6wxc2w",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758634271128_gpkx0yz3a",
+            "sourceNodeId": "1758634249975_c1i6wxc2w",
+            "targetNodeId": "1758633912545_nawabdhem",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758634293633_vn1hyilmw",
+            "sourceNodeId": "1758634249975_c1i6wxc2w",
+            "targetNodeId": "1758634290870_im6rplw92",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758634295590_opwzkozm3",
+            "sourceNodeId": "1758634249975_c1i6wxc2w",
+            "targetNodeId": "1758634284662_l7hvr7fuo",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758634319737_nkogdm0cs",
+            "sourceNodeId": "1758633912545_cdy2pg1pn",
+            "targetNodeId": "1758634317404_8aaeb4ve2",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758634344054_vo7vw8fmt",
+            "sourceNodeId": "1758633912545_cdy2pg1pn",
+            "targetNodeId": "1758634337943_93kaze24m",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758634385597_4o9rgtnom",
+            "sourceNodeId": "1758634337943_93kaze24m",
+            "targetNodeId": "1758633912545_lgpy79s0o",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758634387383_fdxkfmsjs",
+            "sourceNodeId": "1758634337943_93kaze24m",
+            "targetNodeId": "1758633912545_i1kac3qvv",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758634389050_8ad7tojaj",
+            "sourceNodeId": "1758634337943_93kaze24m",
+            "targetNodeId": "1758633912545_5cqcrrfkg",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758634403465_it5m1di95",
+            "sourceNodeId": "1758633912545_7xy1se8pk",
+            "targetNodeId": "1758634397890_nh8nat3ph",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        }
+    ],
+    "canvasScale": 0.7882997760000008,
+    "canvasOffset": {
+        "x": 758.2,
+        "y": 526.7
+    }
+}

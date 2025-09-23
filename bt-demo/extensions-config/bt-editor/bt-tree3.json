@@ -1,0 +1,193 @@
+{
+    "name": "bt-tree3",
+    "description": "",
+    "nodes": [
+        {
+            "id": "1758979704536_g6jkamjdm",
+            "className": "Selector",
+            "name": "选择节点",
+            "position": {
+                "x": -60,
+                "y": -220
+            },
+            "parameters": {},
+            "children": [
+                "1758979708831_vibpbusev",
+                "1758979710657_ksqwgrqym",
+                "1758979712702_5miziffc9"
+            ]
+        },
+        {
+            "id": "1758979708831_vibpbusev",
+            "className": "Sequence",
+            "name": "顺序节点",
+            "position": {
+                "x": -260,
+                "y": -120
+            },
+            "parameters": {},
+            "children": [
+                "1758979721847_ikkmffinc",
+                "1758979717102_hs4zv2ysl"
+            ]
+        },
+        {
+            "id": "1758979710657_ksqwgrqym",
+            "className": "Sequence",
+            "name": "顺序节点",
+            "position": {
+                "x": 20,
+                "y": -120
+            },
+            "parameters": {},
+            "children": [
+                "1758979723586_oa4umrekl",
+                "1758979718532_16c9kb7cx"
+            ]
+        },
+        {
+            "id": "1758979712702_5miziffc9",
+            "className": "Sequence",
+            "name": "顺序节点",
+            "position": {
+                "x": 220,
+                "y": -120
+            },
+            "parameters": {},
+            "children": [
+                "1758979720285_9ojvbt7sw"
+            ]
+        },
+        {
+            "id": "1758979717102_hs4zv2ysl",
+            "className": "BTAnimation",
+            "name": "播放动画",
+            "position": {
+                "x": -200,
+                "y": -60
+            },
+            "parameters": {
+                "_name": "run",
+                "_loop": false
+            },
+            "children": []
+        },
+        {
+            "id": "1758979718532_16c9kb7cx",
+            "className": "BTAnimation",
+            "name": "播放动画",
+            "position": {
+                "x": 80,
+                "y": -60
+            },
+            "parameters": {
+                "_name": "",
+                "_loop": false
+            },
+            "children": []
+        },
+        {
+            "id": "1758979720285_9ojvbt7sw",
+            "className": "BTAnimation",
+            "name": "播放动画",
+            "position": {
+                "x": 220,
+                "y": -60
+            },
+            "parameters": {
+                "_name": "",
+                "_loop": false
+            },
+            "children": []
+        },
+        {
+            "id": "1758979721847_ikkmffinc",
+            "className": "BTConditionRandom",
+            "name": "随机条件节点",
+            "position": {
+                "x": -340,
+                "y": -60
+            },
+            "parameters": {
+                "_value": 0.5
+            },
+            "children": []
+        },
+        {
+            "id": "1758979723586_oa4umrekl",
+            "className": "BTConditionRandom",
+            "name": "随机条件节点",
+            "position": {
+                "x": -60,
+                "y": -60
+            },
+            "parameters": {
+                "_value": 0.5
+            },
+            "children": []
+        }
+    ],
+    "connections": [
+        {
+            "id": "conn_1758979728478_r812fr61c",
+            "sourceNodeId": "1758979704536_g6jkamjdm",
+            "targetNodeId": "1758979708831_vibpbusev",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758979730147_24owqabyj",
+            "sourceNodeId": "1758979704536_g6jkamjdm",
+            "targetNodeId": "1758979710657_ksqwgrqym",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758979732272_8ywszwdxr",
+            "sourceNodeId": "1758979704536_g6jkamjdm",
+            "targetNodeId": "1758979712702_5miziffc9",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758979734464_rm0ysdtpo",
+            "sourceNodeId": "1758979708831_vibpbusev",
+            "targetNodeId": "1758979721847_ikkmffinc",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758979739229_8pnb80e23",
+            "sourceNodeId": "1758979708831_vibpbusev",
+            "targetNodeId": "1758979717102_hs4zv2ysl",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758979741003_zg52rxs79",
+            "sourceNodeId": "1758979710657_ksqwgrqym",
+            "targetNodeId": "1758979723586_oa4umrekl",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758979744846_1oagoplj0",
+            "sourceNodeId": "1758979710657_ksqwgrqym",
+            "targetNodeId": "1758979718532_16c9kb7cx",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758979750437_3oafpzhyz",
+            "sourceNodeId": "1758979712702_5miziffc9",
+            "targetNodeId": "1758979720285_9ojvbt7sw",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        }
+    ],
+    "canvasScale": 1,
+    "canvasOffset": {
+        "x": 595,
+        "y": 618.5
+    }
+}

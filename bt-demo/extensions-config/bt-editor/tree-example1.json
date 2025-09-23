@@ -1,0 +1,168 @@
+{
+    "name": "tree-example1",
+    "description": "",
+    "nodes": [
+        {
+            "id": "1758630775717_d1gipfamh",
+            "className": "Selector",
+            "name": "选择节点",
+            "position": {
+                "x": -60,
+                "y": -220
+            },
+            "parameters": {},
+            "children": [
+                "1758630814199_qnitmm2sd",
+                "1758630832275_prflitgyu",
+                "1758630967937_2c0t3xi6t"
+            ],
+            "alias": "根选择节点"
+        },
+        {
+            "id": "1758630814199_qnitmm2sd",
+            "className": "Sequence",
+            "name": "顺序节点",
+            "position": {
+                "x": -260,
+                "y": -120
+            },
+            "parameters": {},
+            "children": [
+                "1758630875390_e3dlxo1jg",
+                "1758630940801_u6j12wj96"
+            ],
+            "alias": "攻击顺序节点"
+        },
+        {
+            "id": "1758630832275_prflitgyu",
+            "className": "Sequence",
+            "name": "顺序节点",
+            "position": {
+                "x": 20,
+                "y": -120
+            },
+            "parameters": {},
+            "children": [
+                "1758630915741_ux73zz8ws",
+                "1758630955525_n0hw99t1q"
+            ],
+            "alias": "逃跑顺序节点"
+        },
+        {
+            "id": "1758630875390_e3dlxo1jg",
+            "className": "BTConditionTest",
+            "name": "测试条件节点",
+            "position": {
+                "x": -340,
+                "y": -60
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "敌人在附近"
+        },
+        {
+            "id": "1758630915741_ux73zz8ws",
+            "className": "BTConditionTest",
+            "name": "测试条件节点",
+            "position": {
+                "x": -60,
+                "y": -60
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "血量低"
+        },
+        {
+            "id": "1758630940801_u6j12wj96",
+            "className": "BTTestNode2",
+            "name": "空行为节点",
+            "position": {
+                "x": -200,
+                "y": -40
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "攻击"
+        },
+        {
+            "id": "1758630955525_n0hw99t1q",
+            "className": "BTTestNode2",
+            "name": "空行为节点",
+            "position": {
+                "x": 80,
+                "y": -40
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "逃跑"
+        },
+        {
+            "id": "1758630967937_2c0t3xi6t",
+            "className": "BTTestNode2",
+            "name": "空行为节点",
+            "position": {
+                "x": 220,
+                "y": -120
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "巡逻"
+        }
+    ],
+    "connections": [
+        {
+            "id": "conn_1758630929220_k30loxdah",
+            "sourceNodeId": "1758630814199_qnitmm2sd",
+            "targetNodeId": "1758630875390_e3dlxo1jg",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758630930951_5wgaug4ju",
+            "sourceNodeId": "1758630775717_d1gipfamh",
+            "targetNodeId": "1758630814199_qnitmm2sd",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758630932626_fz1jivc35",
+            "sourceNodeId": "1758630775717_d1gipfamh",
+            "targetNodeId": "1758630832275_prflitgyu",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758630934663_zoq1ugzkq",
+            "sourceNodeId": "1758630832275_prflitgyu",
+            "targetNodeId": "1758630915741_ux73zz8ws",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758630951335_f8qdr57vl",
+            "sourceNodeId": "1758630814199_qnitmm2sd",
+            "targetNodeId": "1758630940801_u6j12wj96",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758630957361_s28qi8xnd",
+            "sourceNodeId": "1758630832275_prflitgyu",
+            "targetNodeId": "1758630955525_n0hw99t1q",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758630973456_60p9k2k07",
+            "sourceNodeId": "1758630775717_d1gipfamh",
+            "targetNodeId": "1758630967937_2c0t3xi6t",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        }
+    ],
+    "canvasScale": 1.2507982082066933,
+    "canvasOffset": {
+        "x": 465.5,
+        "y": 644.8338118617028
+    }
+}

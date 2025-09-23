@@ -1,0 +1,86 @@
+{
+    "name": "tree-example-move1",
+    "description": "",
+    "nodes": [
+        {
+            "id": "1758633158053_g12gp05tz",
+            "className": "Sequence",
+            "name": "顺序节点",
+            "position": {
+                "x": -60,
+                "y": -220
+            },
+            "parameters": {},
+            "children": [
+                "1758633158053_n9lvsqtou",
+                "1758633158053_m7mptbzme",
+                "1758633230846_qqosra95l"
+            ],
+            "alias": "巡逻顺序节点"
+        },
+        {
+            "id": "1758633158053_n9lvsqtou",
+            "className": "BTTestNode2",
+            "name": "空行为节点",
+            "position": {
+                "x": -200,
+                "y": -120
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "移动到下一巡逻点"
+        },
+        {
+            "id": "1758633158053_m7mptbzme",
+            "className": "BTTestNode2",
+            "name": "空行为节点",
+            "position": {
+                "x": -60,
+                "y": -120
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "等待片刻"
+        },
+        {
+            "id": "1758633230846_qqosra95l",
+            "className": "BTTestNode2",
+            "name": "空行为节点",
+            "position": {
+                "x": 80,
+                "y": -120
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "更新巡逻点"
+        }
+    ],
+    "connections": [
+        {
+            "id": "conn_1758633158053_o1n2n1h4x",
+            "sourceNodeId": "1758633158053_g12gp05tz",
+            "targetNodeId": "1758633158053_n9lvsqtou",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758633175180_5ukpygitx",
+            "sourceNodeId": "1758633158053_g12gp05tz",
+            "targetNodeId": "1758633158053_m7mptbzme",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758633234380_cyje40zf5",
+            "sourceNodeId": "1758633158053_g12gp05tz",
+            "targetNodeId": "1758633230846_qqosra95l",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        }
+    ],
+    "canvasScale": 1.2507982082066933,
+    "canvasOffset": {
+        "x": 569,
+        "y": 704.2467267515208
+    }
+}

@@ -3,66 +3,193 @@
     "description": "",
     "nodes": [
         {
-            "id": "1758206972710_bhxebhy7o",
-            "className": "Sequence",
-            "name": "顺序节点",
-            "position": {
-                "x": 80,
-                "y": -320
-            },
-            "parameters": {},
-            "children": [
-                "1758090634327_mf36nwkdt"
-            ]
-        },
-        {
-            "id": "1758090634327_mf36nwkdt",
+            "id": "1758972524240_4ockrv5jo",
             "className": "Selector",
             "name": "选择节点",
             "position": {
-                "x": -80,
+                "x": -60,
                 "y": -220
             },
             "parameters": {},
             "children": [
-                "1758206988178_55b7kk5va"
-            ],
-            "alias": "是的发放是的发放"
+                "1758972608716_o2uai5dp8",
+                "1758972550481_0iq7imml9",
+                "1758972698829_wxfe7ut33"
+            ]
         },
         {
-            "id": "1758206988178_55b7kk5va",
+            "id": "1758889921667_sjwxkfjs7",
             "className": "BTAnimation",
             "name": "播放动画",
             "position": {
-                "x": -20,
-                "y": -40
+                "x": 80,
+                "y": -60
             },
             "parameters": {
-                "_name": "",
+                "_name": "jump",
                 "_loop": false
             },
             "children": []
+        },
+        {
+            "id": "1758889925476_dcyjc7a4o",
+            "className": "BTAnimation",
+            "name": "播放动画",
+            "position": {
+                "x": 220,
+                "y": -60
+            },
+            "parameters": {
+                "_name": "idle",
+                "_loop": true
+            },
+            "children": []
+        },
+        {
+            "id": "1758972550481_0iq7imml9",
+            "className": "Sequence",
+            "name": "顺序节点",
+            "position": {
+                "x": 20,
+                "y": -120
+            },
+            "parameters": {},
+            "children": [
+                "1758972573109_fxt7magur",
+                "1758889921667_sjwxkfjs7"
+            ]
+        },
+        {
+            "id": "1758972573109_fxt7magur",
+            "className": "BTConditionRandom",
+            "name": "随机条件节点",
+            "position": {
+                "x": -60,
+                "y": -60
+            },
+            "parameters": {
+                "_value": 0.5
+            },
+            "children": []
+        },
+        {
+            "id": "1758972608716_o2uai5dp8",
+            "className": "Sequence",
+            "name": "顺序节点",
+            "position": {
+                "x": -260,
+                "y": -120
+            },
+            "parameters": {},
+            "children": [
+                "1758972608716_ivq9o10bi",
+                "1758972608716_zmw9ep5n3"
+            ]
+        },
+        {
+            "id": "1758972608716_ivq9o10bi",
+            "className": "BTConditionRandom",
+            "name": "随机条件节点",
+            "position": {
+                "x": -340,
+                "y": -60
+            },
+            "parameters": {
+                "_value": 0.5
+            },
+            "children": []
+        },
+        {
+            "id": "1758972608716_zmw9ep5n3",
+            "className": "BTAnimation",
+            "name": "播放动画",
+            "position": {
+                "x": -200,
+                "y": -60
+            },
+            "parameters": {
+                "_name": "jump",
+                "_loop": false
+            },
+            "children": []
+        },
+        {
+            "id": "1758972698829_wxfe7ut33",
+            "className": "LimitTime",
+            "name": "时间限制节点",
+            "position": {
+                "x": 220,
+                "y": -140
+            },
+            "parameters": {
+                "_max": 2
+            },
+            "children": [
+                "1758889925476_dcyjc7a4o"
+            ]
         }
     ],
     "connections": [
         {
-            "id": "conn_1758206976733_208tneycs",
-            "sourceNodeId": "1758206972710_bhxebhy7o",
-            "targetNodeId": "1758090634327_mf36nwkdt",
+            "id": "conn_1758972580886_zykcbl2vk",
+            "sourceNodeId": "1758972550481_0iq7imml9",
+            "targetNodeId": "1758972573109_fxt7magur",
             "sourcePointType": "child",
             "targetPointType": "parent"
         },
         {
-            "id": "conn_1758206989897_46hw88z7h",
-            "sourceNodeId": "1758090634327_mf36nwkdt",
-            "targetNodeId": "1758206988178_55b7kk5va",
+            "id": "conn_1758972582770_9e4pexjcz",
+            "sourceNodeId": "1758972550481_0iq7imml9",
+            "targetNodeId": "1758889921667_sjwxkfjs7",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758972608716_6gnj5711e",
+            "sourceNodeId": "1758972608716_o2uai5dp8",
+            "targetNodeId": "1758972608716_ivq9o10bi",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758972608716_9y9ytjxa8",
+            "sourceNodeId": "1758972608716_o2uai5dp8",
+            "targetNodeId": "1758972608716_zmw9ep5n3",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758972613504_me3rp31l8",
+            "sourceNodeId": "1758972524240_4ockrv5jo",
+            "targetNodeId": "1758972608716_o2uai5dp8",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758972674275_rkn2let28",
+            "sourceNodeId": "1758972524240_4ockrv5jo",
+            "targetNodeId": "1758972550481_0iq7imml9",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758972717495_fo5zdeslg",
+            "sourceNodeId": "1758972524240_4ockrv5jo",
+            "targetNodeId": "1758972698829_wxfe7ut33",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758972724719_hjsvpuvvy",
+            "sourceNodeId": "1758972698829_wxfe7ut33",
+            "targetNodeId": "1758889925476_dcyjc7a4o",
             "sourcePointType": "child",
             "targetPointType": "parent"
         }
     ],
-    "canvasScale": 1.139190980775211,
+    "canvasScale": 1.953125,
     "canvasOffset": {
-        "x": 549.4323607689915,
-        "y": 698.6185343759718
+        "x": 700,
+        "y": 665.25
     }
 }

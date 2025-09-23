@@ -12,6 +12,20 @@
 
 行为树本质上是一个**有向无环图**，用树状结构来组织和执行行为逻辑。每个节点代表一个行为或决策，通过父子关系形成层次化的控制流。
 
+* 如果你从来没接触过行为树，可以看下这篇文章
+
+  [行为树逻辑详解](./docs/BehaviorTree.md)
+
+
+## 可视化编辑器
+
+[下载地址:https://store.cocos.com/app/detail/8201](https://store.cocos.com/app/detail/8201)
+
+
+查看详情: [编辑器文档](./docs/USED.md)
+
+![image](./image/bt-gui.png)
+
 ## 特性
 
 - 🔧 **类型安全**: 完整 TypeScript 支持
@@ -30,13 +44,6 @@ npm install kunpocc-behaviortree
 
 项目根目录下的 `bt-demo`文件夹
 
-
-## GUI编辑器
-
-查看详情: [GUI编辑器](./docs/USED.md)
-
-![image](./image/image_tree.png)
-
 ## 核心概念
 
 #### 状态类型
@@ -53,22 +60,6 @@ enum Status {
 - **装饰节点**: 有且只有一个子节点（Decorator） 
 - **叶子节点**: 不能包含子节点 (LeafNode)
 - **条件节点**: 特殊的叶子节点 (Condition)
-
-
-## 装饰器
-
-> **自行实现的节点，通过装饰器把数据暴露给行为树编辑器**
-
-##### ClassAction - 行为节点装饰器
-
-##### ClassCondition - 条件节点装饰器
-
-##### ClassComposite - 组合节点装饰器
-
-##### ClassDecorator - 装饰节点装饰器
-
-##### prop - 属性装饰器
-
 
 
 ## 内置节点

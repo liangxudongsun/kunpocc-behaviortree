@@ -47,7 +47,7 @@ export class BTAnimation extends BT.LeafNode {
 }
 
 /** 条件节点 */
-@BT.ClassCondition("BTConditionRandom", { name: "随机条件节点", group: "基础条件节点", desc: "随机0-1的值，大于设置值返回成功，否则返回失败" })
+@BT.ClassCondition("BTConditionRandom", { name: "随机条件节点", group: "基础条件节点", desc: "随机0-1的值，小于设置值返回成功，否则返回失败" })
 export class BTConditionRandom extends BT.Condition {
 
     @BT.prop({ type: BT.ParamType.float, description: "值", defaultValue: 0.5 })

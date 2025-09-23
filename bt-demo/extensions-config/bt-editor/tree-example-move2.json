@@ -1,0 +1,269 @@
+{
+    "name": "tree-example-move2",
+    "description": "",
+    "nodes": [
+        {
+            "id": "1758633408841_o85luvhya",
+            "className": "Selector",
+            "name": "选择节点",
+            "position": {
+                "x": -60,
+                "y": -220
+            },
+            "parameters": {},
+            "children": [
+                "1758633372295_1vww23k1k",
+                "1758633460046_alqdykjsd",
+                "1758633637964_a0khi5e5k"
+            ],
+            "alias": "智能巡逻选择节点"
+        },
+        {
+            "id": "1758633372295_1vww23k1k",
+            "className": "Sequence",
+            "name": "顺序节点",
+            "position": {
+                "x": -400,
+                "y": -120
+            },
+            "parameters": {},
+            "children": [
+                "1758633506673_f6rvm02zs",
+                "1758633372295_1vokt067a",
+                "1758633372295_7vyepkar1",
+                "1758633372295_86o7jk1k4"
+            ],
+            "alias": "调查异常"
+        },
+        {
+            "id": "1758633372295_1vokt067a",
+            "className": "BTTestNode2",
+            "name": "空行为节点",
+            "position": {
+                "x": -480,
+                "y": -40
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "移动到异常位置"
+        },
+        {
+            "id": "1758633372295_7vyepkar1",
+            "className": "BTTestNode2",
+            "name": "空行为节点",
+            "position": {
+                "x": -340,
+                "y": -40
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "调查"
+        },
+        {
+            "id": "1758633372295_86o7jk1k4",
+            "className": "BTTestNode2",
+            "name": "空行为节点",
+            "position": {
+                "x": -200,
+                "y": -40
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "返回巡逻路线"
+        },
+        {
+            "id": "1758633460046_alqdykjsd",
+            "className": "Sequence",
+            "name": "顺序节点",
+            "position": {
+                "x": 20,
+                "y": -120
+            },
+            "parameters": {},
+            "children": [
+                "1758633584586_llol3kpvi",
+                "1758633460046_l5944c3nc"
+            ],
+            "alias": "响应呼叫"
+        },
+        {
+            "id": "1758633460046_l5944c3nc",
+            "className": "BTTestNode2",
+            "name": "空行为节点",
+            "position": {
+                "x": 80,
+                "y": -40
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "前往支援"
+        },
+        {
+            "id": "1758633506673_f6rvm02zs",
+            "className": "BTConditionTest",
+            "name": "测试条件节点",
+            "position": {
+                "x": -620,
+                "y": -60
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "发现异常？"
+        },
+        {
+            "id": "1758633584586_llol3kpvi",
+            "className": "BTConditionTest",
+            "name": "测试条件节点",
+            "position": {
+                "x": -60,
+                "y": -60
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "收到求援信号？"
+        },
+        {
+            "id": "1758633637964_a0khi5e5k",
+            "className": "Sequence",
+            "name": "顺序节点",
+            "position": {
+                "x": 360,
+                "y": -120
+            },
+            "parameters": {},
+            "children": [
+                "1758633637964_dgyhnjuhl",
+                "1758633637964_d7uht9tgg",
+                "1758633637964_qc31zjqo5"
+            ],
+            "alias": "巡逻"
+        },
+        {
+            "id": "1758633637964_dgyhnjuhl",
+            "className": "BTTestNode2",
+            "name": "空行为节点",
+            "position": {
+                "x": 220,
+                "y": -40
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "移动到巡逻点"
+        },
+        {
+            "id": "1758633637964_d7uht9tgg",
+            "className": "BTTestNode2",
+            "name": "空行为节点",
+            "position": {
+                "x": 360,
+                "y": -40
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "环顾四周"
+        },
+        {
+            "id": "1758633637964_qc31zjqo5",
+            "className": "BTTestNode2",
+            "name": "空行为节点",
+            "position": {
+                "x": 500,
+                "y": -40
+            },
+            "parameters": {},
+            "children": [],
+            "alias": "等待"
+        }
+    ],
+    "connections": [
+        {
+            "id": "conn_1758633372295_qdmeu2m29",
+            "sourceNodeId": "1758633372295_1vww23k1k",
+            "targetNodeId": "1758633372295_1vokt067a",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758633372295_myjl0d27a",
+            "sourceNodeId": "1758633372295_1vww23k1k",
+            "targetNodeId": "1758633372295_7vyepkar1",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758633372295_1ron3sff3",
+            "sourceNodeId": "1758633372295_1vww23k1k",
+            "targetNodeId": "1758633372295_86o7jk1k4",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758633410470_8lnhy9at6",
+            "sourceNodeId": "1758633408841_o85luvhya",
+            "targetNodeId": "1758633372295_1vww23k1k",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758633460046_1zy4a0vls",
+            "sourceNodeId": "1758633460046_alqdykjsd",
+            "targetNodeId": "1758633460046_l5944c3nc",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758633463466_ztkanoztc",
+            "sourceNodeId": "1758633408841_o85luvhya",
+            "targetNodeId": "1758633460046_alqdykjsd",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758633508904_9pyqismh3",
+            "sourceNodeId": "1758633372295_1vww23k1k",
+            "targetNodeId": "1758633506673_f6rvm02zs",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758633587533_wh3ccayol",
+            "sourceNodeId": "1758633460046_alqdykjsd",
+            "targetNodeId": "1758633584586_llol3kpvi",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758633637964_8n9zrweqx",
+            "sourceNodeId": "1758633637964_a0khi5e5k",
+            "targetNodeId": "1758633637964_dgyhnjuhl",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758633637964_y4rn7rwgc",
+            "sourceNodeId": "1758633637964_a0khi5e5k",
+            "targetNodeId": "1758633637964_d7uht9tgg",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758633637964_x5ey2s8z7",
+            "sourceNodeId": "1758633637964_a0khi5e5k",
+            "targetNodeId": "1758633637964_qc31zjqo5",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        },
+        {
+            "id": "conn_1758633639995_rdo0y6s9l",
+            "sourceNodeId": "1758633408841_o85luvhya",
+            "targetNodeId": "1758633637964_a0khi5e5k",
+            "sourcePointType": "child",
+            "targetPointType": "parent"
+        }
+    ],
+    "canvasScale": 1.0680104605497773,
+    "canvasOffset": {
+        "x": 569,
+        "y": 513.5
+    }
+}

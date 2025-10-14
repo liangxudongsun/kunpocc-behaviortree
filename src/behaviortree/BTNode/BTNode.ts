@@ -115,9 +115,6 @@ export abstract class BTNode implements IBTNode {
         return this._local.getEntity();
     }
 
-    /**
-     * 设置获取全局黑板数据
-     */
     public set<T>(key: string, value: T): void {
         this._local.set(key, value);
     }
@@ -126,9 +123,6 @@ export abstract class BTNode implements IBTNode {
         return this._local.get(key);
     }
 
-    /**
-     * 设置获取树根节点的黑板数据
-     */
     public setRoot<T>(key: string, value: T): void {
         this._root.set(key, value);
     }
@@ -137,9 +131,6 @@ export abstract class BTNode implements IBTNode {
         return this._root.get(key);
     }
 
-    /** 
-     * 设置全局黑板数据 
-     */
     public setGlobal<T>(key: string, value: T): void {
         globalBlackboard.set(key, value);
     }

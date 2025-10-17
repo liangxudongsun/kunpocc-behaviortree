@@ -38,6 +38,14 @@ export interface IBTNode {
 
     /** 获取关联的实体 */
     getEntity<T>(): T;
+
+    /**
+     * 递归清理子节点的打开状态
+     * 用途:
+     * 1.装饰节点的子节点未关闭，但是装饰节点关闭时，需要清理子节点的打开状态
+     * 2.组合节点关闭，但是子节点可能还在运行，需要清理子节点的打开状态
+     */
+    cleanupChild(): void;
 }
 
 
@@ -92,15 +100,14 @@ export abstract class BTNode implements IBTNode {
      */
     protected open(): void { }
     protected close(): void { }
-    /**
-     * 清理子节点的打开状态
-     * 一般用于装饰节点的非子节点关闭时， 用来清理子节点的打开状态
-     */
-    protected cleanupChild(): void {
-        const child = this.children[0];
-        if (child && this._local.openNodes.has(child)) {
-            this._local.openNodes.delete(child);
-            (child as BTNode).close();
+
+    public cleanupChild(): void {
+        for (const child of this.children) {
+            if (this._local.openNodes.has(child)) {
+                child.cleanupChild();
+                this._local.openNodes.delete(child);
+                (child as BTNode).close();
+            }
         }
     }
 

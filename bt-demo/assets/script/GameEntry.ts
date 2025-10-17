@@ -13,7 +13,7 @@ export class GameEntry extends Component {
     private _tree: BT.BehaviorTree<sp.Skeleton> = null;
     start(): void {
         console.log("btConfig", this.btConfig);
-        let btTree1: BT.INodeConfig[] = this.btConfig.json["bt-tree1"]
+        let btTree1: BT.INodeConfig[] = this.btConfig.json["actor2"]
         this._tree = BT.createBehaviorTree(btTree1, this.skeleton);
     }
 

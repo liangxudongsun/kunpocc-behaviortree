@@ -116,3 +116,16 @@ export class BTCondition extends BT.ConditionDecorator {
         return Math.random() > this._value;
     }
 }
+
+//////////////////////////自定义行为树////////////////////////////////////
+
+/** 爆发状态条件节点 */
+@BT.ClassCondition("BTConditionTest", { name: "爆发状态条件节点", group: "基础条件节点", desc: "" })
+export class BTConditionInCrit extends BT.Condition {
+
+    public isEligible(): boolean {
+        let isCrit: boolean = this.get("isCrit")
+        // console.log("是否处于爆发状态？", isCrit)
+        return isCrit;
+    }
+}

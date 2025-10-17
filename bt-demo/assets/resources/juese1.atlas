@@ -1,0 +1,286 @@
+
+juese1.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+右手_1
+  rotate: true
+  xy: 415, 448
+  size: 57, 125
+  orig: 57, 125
+  offset: 0, 0
+  index: -1
+右眼1
+  rotate: true
+  xy: 417, 110
+  size: 26, 36
+  orig: 28, 38
+  offset: 1, 1
+  index: -1
+右眼2
+  rotate: false
+  xy: 230, 326
+  size: 40, 49
+  orig: 42, 51
+  offset: 1, 1
+  index: -1
+右眼上
+  rotate: false
+  xy: 377, 648
+  size: 59, 25
+  orig: 59, 25
+  offset: 0, 0
+  index: -1
+哭嘴巴
+  rotate: false
+  xy: 367, 110
+  size: 48, 26
+  orig: 48, 26
+  offset: 0, 0
+  index: -1
+哭眼睛
+  rotate: false
+  xy: 2, 5
+  size: 42, 20
+  orig: 42, 20
+  offset: 0, 0
+  index: -1
+嘴巴
+  rotate: true
+  xy: 199, 4
+  size: 28, 7
+  orig: 30, 9
+  offset: 1, 1
+  index: -1
+嘴巴2
+  rotate: false
+  xy: 308, 2
+  size: 34, 18
+  orig: 34, 18
+  offset: 0, 0
+  index: -1
+头
+  rotate: true
+  xy: 205, 108
+  size: 213, 160
+  orig: 215, 162
+  offset: 1, 1
+  index: -1
+头发1
+  rotate: true
+  xy: 363, 333
+  size: 112, 107
+  orig: 112, 107
+  offset: 0, 0
+  index: -1
+头发2
+  rotate: false
+  xy: 455, 8
+  size: 147, 128
+  orig: 147, 128
+  offset: 0, 0
+  index: -1
+头发3
+  rotate: true
+  xy: 367, 138
+  size: 193, 110
+  orig: 195, 112
+  offset: 1, 1
+  index: -1
+左眼1
+  rotate: false
+  xy: 438, 651
+  size: 26, 36
+  orig: 28, 38
+  offset: 1, 1
+  index: -1
+左眼2
+  rotate: false
+  xy: 482, 608
+  size: 40, 48
+  orig: 42, 50
+  offset: 1, 1
+  index: -1
+左眼上
+  rotate: true
+  xy: 203, 323
+  size: 52, 25
+  orig: 52, 25
+  offset: 0, 0
+  index: -1
+扫把
+  rotate: false
+  xy: 61, 34
+  size: 142, 287
+  orig: 142, 287
+  offset: 0, 0
+  index: -1
+抹布
+  rotate: true
+  xy: 377, 842
+  size: 179, 175
+  orig: 179, 175
+  offset: 0, 0
+  index: -1
+挡
+  rotate: false
+  xy: 391, 11
+  size: 53, 13
+  orig: 53, 13
+  offset: 0, 0
+  index: -1
+收音机1
+  rotate: false
+  xy: 336, 331
+  size: 25, 114
+  orig: 25, 114
+  offset: 0, 0
+  index: -1
+收音机2
+  rotate: true
+  xy: 377, 675
+  size: 165, 47
+  orig: 165, 47
+  offset: 0, 0
+  index: -1
+收音机3
+  rotate: true
+  xy: 46, 7
+  size: 18, 151
+  orig: 18, 151
+  offset: 0, 0
+  index: -1
+椅子
+  rotate: true
+  xy: 208, 7
+  size: 99, 62
+  orig: 99, 62
+  offset: 0, 0
+  index: -1
+水印
+  rotate: false
+  xy: 2, 323
+  size: 199, 323
+  orig: 199, 323
+  offset: 0, 0
+  index: -1
+白眼
+  rotate: false
+  xy: 482, 513
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+相机
+  rotate: true
+  xy: 426, 689
+  size: 151, 108
+  orig: 151, 108
+  offset: 0, 0
+  index: -1
+相机2
+  rotate: false
+  xy: 262, 447
+  size: 151, 199
+  orig: 151, 199
+  offset: 0, 0
+  index: -1
+相机光
+  rotate: false
+  xy: 2, 648
+  size: 373, 373
+  orig: 373, 373
+  offset: 0, 0
+  index: -1
+眉毛右
+  rotate: false
+  xy: 466, 673
+  size: 42, 14
+  orig: 44, 16
+  offset: 1, 1
+  index: -1
+眉毛左
+  rotate: false
+  xy: 466, 658
+  size: 40, 13
+  orig: 42, 15
+  offset: 1, 1
+  index: -1
+眉毛皱眉
+  rotate: false
+  xy: 344, 5
+  size: 45, 15
+  orig: 45, 15
+  offset: 0, 0
+  index: -1
+眼泪1
+  rotate: true
+  xy: 2, 27
+  size: 294, 57
+  orig: 294, 57
+  offset: 0, 0
+  index: -1
+眼泪2
+  rotate: true
+  xy: 203, 377
+  size: 269, 57
+  orig: 269, 57
+  offset: 0, 0
+  index: -1
+眼泪3
+  rotate: false
+  xy: 308, 22
+  size: 58, 84
+  orig: 58, 84
+  offset: 0, 0
+  index: -1
+组 4
+  rotate: false
+  xy: 368, 26
+  size: 75, 82
+  orig: 77, 84
+  offset: 1, 1
+  index: -1
+腿_1
+  rotate: false
+  xy: 272, 14
+  size: 34, 92
+  orig: 34, 92
+  offset: 0, 0
+  index: -1
+话筒
+  rotate: false
+  xy: 272, 323
+  size: 62, 122
+  orig: 64, 124
+  offset: 1, 1
+  index: -1
+身体
+  rotate: false
+  xy: 472, 369
+  size: 73, 77
+  orig: 75, 79
+  offset: 1, 1
+  index: -1
+阴影
+  rotate: true
+  xy: 415, 507
+  size: 139, 65
+  orig: 141, 67
+  offset: 1, 1
+  index: -1
+领结
+  rotate: true
+  xy: 482, 560
+  size: 46, 40
+  orig: 48, 42
+  offset: 1, 1
+  index: -1
+鼻子
+  rotate: true
+  xy: 272, 4
+  size: 8, 12
+  orig: 10, 14
+  offset: 1, 1
+  index: -1

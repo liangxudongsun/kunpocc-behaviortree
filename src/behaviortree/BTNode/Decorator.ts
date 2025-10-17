@@ -30,6 +30,7 @@ export abstract class ConditionDecorator extends Decorator {
         if (this.isEligible()) {
             return this.children[0]!._execute(dt);
         }
+        this.cleanupChild();
         return Status.FAILURE;
     }
 }

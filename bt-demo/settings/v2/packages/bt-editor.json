@@ -1,0 +1,14 @@
+{
+  "__version__": "1.0.1",
+  "panelSize": {
+    "width": 1800,
+    "height": 1172,
+    "timestamp": 1759221857309
+  },
+  "panel": {
+    "size": {
+      "width": 2056,
+      "height": 900
+    }
+  }
+}
